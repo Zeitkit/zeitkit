@@ -89,11 +89,11 @@
       = f.input :number
       = f.input :discount
     .col-md-3
-      = f.input :payment_info
+      = f.input :payment_info, input_html: { class: "default-payment-textarea" }
     .col-md-3
-      = f.input :payment_terms
+      = f.input :payment_terms, input_html: { class: "default-payment-textarea" }
     .col-md-3
-      = f.input :note
+      = f.input :note, input_html: { class: "default-payment-textarea" }
   .form-actions
     .btn-group
       = f.button :submit, "Save"

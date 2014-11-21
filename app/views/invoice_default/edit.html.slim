@@ -10,15 +10,15 @@
     .col-md-4
       h4 Payment info
       #wmd-button-bar
-      = f.input :payment_info, input_html: {class: "col-md-4 wmd-input", id: "wmd-input"}, label: false
+      = f.input :payment_info, input_html: {class: "default-payment-textarea col-md-4 wmd-input", id: "wmd-input"}, label: false
     .col-md-4
       h4 Payment terms
       #wmd-button-bar-second
-      = f.input :payment_terms, input_html: {class: "col-md-4 wmd-input", id: "wmd-input-second"}, label: false
+      = f.input :payment_terms, input_html: {class: "default-payment-textarea col-md-4 wmd-input", id: "wmd-input-second"}, label: false
     .col-md-4
       h4 Note
       #wmd-button-bar-third
-      = f.input :note, input_html: {class: "col-md-4 wmd-input", id: "wmd-input-third"}, label: false
+      = f.input :note, input_html: {class: "default-payment-textarea col-md-4 wmd-input", id: "wmd-input-third"}, label: false
   .form-actions
     = f.button :submit, "Save"
 javascript:
