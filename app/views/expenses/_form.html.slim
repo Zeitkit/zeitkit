@@ -1,9 +1,0 @@
-= simple_form_for @expense do |f|
-  .row
-    .col-md-3
-      = f.input :client_id, collection: current_user.clients
-    .col-md-3
-      = f.input :total
-  = f.input :reason, input_html: { class: "default-textarea" }
-  .form-actions
-    = f.button :submit, "Save"
